@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <!-- Thẻ viewport để hỗ trợ responsive trên thiết bị di động -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cửa hàng Sách ABC</title>
+
+  <!-- Liên kết tới stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header: tiêu đề chính và nav -->
+  <header>
+    <h1>Cửa hàng Sách ABC</h1>
+    <nav>
+      <!-- Liên kết ở đây có thể dẫn tới các trang thực tế; đang dùng '#' làm placeholder -->
+      <ul>
+        <li><a href="#">Trang chủ</a></li>
+        <li><a href="#">Sản phẩm</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main: chứa nội dung chính của trang -->
+  <main>
+    <section aria-labelledby="about-title">
+      <h2 id="about-title">Về chúng tôi</h2>
+      <!-- Đoạn mô tả ngắn về cửa hàng -->
+      <p>Chuyên cung cấp các đầu sách đa dạng từ văn học, học thuật đến sách thiếu nhi. Niềm đam mê đọc sách - Giao niềm tin.</p>
+    </section>
+
+    <section aria-labelledby="products-title">
+      <h2 id="products-title">Sản phẩm nổi bật</h2>
+
+      <!-- Thêm id/class để CSS áp dụng layout -->
+      <div id="product-list">
+        <article class="product-item">
+          <h3>Tiểu thuyết</h3>
+          <!-- Giữ src hiện tại nếu bạn chưa đổi tên file; khuyến nghị đặt ảnh vào folder 'images' và đổi tên không dấu -->
+          <img src="tieu thuyet.png" alt="Bìa sách tiểu thuyết">
+          <p>Một câu chuyện cảm động về ký ức và tình người.</p>
+          <p class="product-price">Giá: <span>120.000₫</span></p>
+        </article>
+
+        <article class="product-item">
+          <h3>Sách học lập trình</h3>
+          <img src="lập trình.png" alt="Bìa sách Lập trình cơ bản">
+          <p>Hướng dẫn dành cho người mới bắt đầu, kèm bài tập thực hành.</p>
+          <p class="product-price">Giá: <span>180.000₫</span></p>
+        </article>
+
+        <article class="product-item">
+          <h3>Sách thiếu nhi</h3>
+          <img src="thiếu nhi.jpg" alt="Bìa sách thiếu nhi">
+          <p>Câu chuyện vui nhộn, minh họa màu sắc phù hợp cho trẻ em.</p>
+          <p class="product-price">Giá: <span>90.000₫</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-title">
+      <h2 id="contact-title">Liên hệ</h2>
+      <!-- Form liên hệ: action="#" chỉ là ví dụ; thay đổi action để gửi dữ liệu -->
+      <form action="#" method="post">
+        <div>
+          <!-- Thẻ label liên kết với input bằng thuộc tính for/id để hỗ trợ accessibility -->
+          <label for="name">Tên:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Nội dung:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <!-- Nút gửi form -->
+          <button type="submit">Gửi</button>
+        </div>
+      </form>
+     
+    </section>
+  </main>
+
+  <!-- Footer: thông tin cuối trang -->
+  <footer>
+    <p>Cửa hàng Sách ABC • Địa chỉ: 123 Đường Sách, Thành phố • © 2025</p>
+  </footer>
+</body>
+</html>
